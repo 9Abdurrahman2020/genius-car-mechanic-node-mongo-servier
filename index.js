@@ -72,6 +72,9 @@ server().catch(console.dir)
 app.get('/', (req,res)=>{
     res.send('Genius mechanic sever is running')
 })
+app.get('/update', (req,res)=>{
+    res.send('Hello update route is here')
+})
 app.listen(port, ()=>{
     console.log('The server is running in port : ', port);
 })
